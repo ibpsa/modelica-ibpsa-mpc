@@ -1,4 +1,4 @@
 within ;
-package IBPSAMPC "Building component model library for Model Predictive Control"
+package IbpsaMpc "Building component model library for Model Predictive Control"
   
-end IBPSAMPC;
+end IbpsaMpc;

@@ -1,7 +1,7 @@
-within IBPSAMPC.Fluid.Sources.BaseClasses;
+within IbpsaMpc.Fluid.Sources.BaseClasses;
 partial model PartialSource_Xi_C
   "Partial component source with parameter definitions for Xi and C"
-  extends IBPSAMPC.Fluid.Sources.BaseClasses.PartialSource;
+  extends IbpsaMpc.Fluid.Sources.BaseClasses.PartialSource;
 
   parameter Boolean use_X_in = false
     "Get the composition (all fractions) from the input connector"

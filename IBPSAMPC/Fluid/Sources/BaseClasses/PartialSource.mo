@@ -1,4 +1,4 @@
-within IBPSAMPC.Fluid.Sources.BaseClasses;
+within IbpsaMpc.Fluid.Sources.BaseClasses;
 partial model PartialSource
   "Partial component source with one fluid connector"
 
