@@ -39,7 +39,16 @@ initial equation
   assert(not use_X_in or not use_Xi_in,
     "Cannot use both X and Xi inputs, choose either use_X_in or use_Xi_in.");
 
+  if not use_X_in and not use_Xi_in then
+    Modelica.Fluid.Utilities.checkBoundary(Medium.mediumName, Medium.substanceNames,
+      Medium.singleState, true, X_in_internal, "Boundary_pT");
+  end if;
+
 equation
+  if use_X_in or use_Xi_in then
+    Modelica.Fluid.Utilities.checkBoundary(Medium.mediumName, Medium.substanceNames,
+      Medium.singleState, true, X_in_internal, "Boundary_pT");
+  end if;
   connect(X_in[1:Medium.nXi], Xi_in_internal);
   connect(X_in,X_in_internal);
   connect(Xi_in, Xi_in_internal);
@@ -61,6 +70,7 @@ equation
     ports[i].Xi_outflow = Xi_in_internal;
     ports[i].C_outflow = C_in_internal;
   end for;
+
 
   annotation (
     Icon(coordinateSystem(
@@ -97,12 +107,6 @@ Otherwise the parameter value is used.
 </p>
 </html>", revisions="<html>
 <ul>
-<li>
-Augustus 14, 2019, by Filip Jorissen:<br/>
-Removed <code>checkBoundary</code> for JModelica compatibility.
-This is for
-<a href=\"https://github.com/ibpsa/modelica-ibpsa-mpc/issues/1\">#1</a>.
-</li>
 <li>
 February 13, 2018, by Michael Wetter:<br/>
 Corrected error in quantity assignment for <code>Xi_in</code>.
