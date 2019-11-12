@@ -17,6 +17,7 @@ files={
 "IBPSA.Fluid.Sources.BaseClasses.PartialSource_Xi_C": {},
 "IBPSA.Fluid.Interfaces.PartialTwoPort": {},
 "IBPSA.Media.Air": {},
+"IBPSA.Utilities.Psychrometrics.Constants" : {},
 # "": {},
 # "": {},
 

@@ -16,3 +16,6 @@ IbpsaMpc/Fluid/Sources/package.mo
 IbpsaMpc/Fluid/package.mo
 IbpsaMpc/Media/Air.mo
 IbpsaMpc/Media/package.mo
+IbpsaMpc/Utilities/Psychrometrics/Constants.mo
+IbpsaMpc/Utilities/Psychrometrics/package.mo
+IbpsaMpc/Utilities/package.mo
