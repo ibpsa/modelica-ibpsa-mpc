@@ -23,8 +23,4 @@ files={
 
 		}
 
-if os.path.exists("merge.patch"):
-    mer.finalizeMergeIbpsaMpc()
-else:
-    print("merge.patch detected, the merge continues. If this is unintentional, remove merge.patch and checkout .copiedFiles .")
-    mer.mergeIbpsaMpc(files)
+mer.mergeIbpsaMpc(files)
