@@ -23,5 +23,7 @@ files={
 
 		}
 
-
-mer.mergeIbpsaMpc(files)
+if os.path.exists("merge.patch"):
+    mer.finalizeMergeIbpsaMpc()
+else:
+    mer.mergeIbpsaMpc(files)
