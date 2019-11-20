@@ -19,3 +19,4 @@ IbpsaMpc/Media/package.mo
 IbpsaMpc/Utilities/Psychrometrics/Constants.mo
 IbpsaMpc/Utilities/Psychrometrics/package.mo
 IbpsaMpc/Utilities/package.mo
+# Sha of last merge: 1b3b2a6e23d7de10cb62634a2dea57069cc74ab9
