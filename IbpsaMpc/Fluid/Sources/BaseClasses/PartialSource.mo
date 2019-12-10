@@ -5,10 +5,10 @@ partial model PartialSource
   replaceable package Medium =
     Modelica.Media.Interfaces.PartialMedium "Medium in the component"
       annotation (choices(
-        choice(redeclare package Medium = IBPSA.Media.Air "Moist air"),
-        choice(redeclare package Medium = IBPSA.Media.Water "Water"),
+        choice(redeclare package Medium = IbpsaMpc.Media.Air "Moist air"),
+        choice(redeclare package Medium = IbpsaMpc.Media.Water "Water"),
         choice(redeclare package Medium =
-            IBPSA.Media.Antifreeze.PropyleneGlycolWater (
+            IbpsaMpc.Media.Antifreeze.PropyleneGlycolWater (
               property_T=293.15,
               X_a=0.40)
               "Propylene glycol water, 40% mass fraction")));
@@ -41,6 +41,7 @@ protected
   Modelica.Blocks.Interfaces.RealInput C_in_internal[Medium.nC](
     final quantity=Medium.extraPropertiesNames)
     "Needed to connect to conditional connector";
+
 
 initial equation
   // Only one connection allowed to a port to avoid unwanted ideal mixing
