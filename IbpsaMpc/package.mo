@@ -19,8 +19,13 @@ Energy Efficiency and Renewable Energy, Office of Building
 Technologies of the U.S. Department of Energy, under
 contract No. DE-AC02-05CH11231.
 </li>
+<li>
+KU Leuven
+was supported for the development of this library
+by Flanders Innovation and Entrepeneurship (Vlaio)
+through the mandate of Filip Jorissen, HBC.2018.2092.
+</li>
 </ul>
-
 <p>
 The following people have directly contributed to the implementation of
 the <code>IbpsaMpc</code> library
