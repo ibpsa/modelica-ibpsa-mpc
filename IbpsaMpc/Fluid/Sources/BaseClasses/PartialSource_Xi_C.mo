@@ -39,7 +39,17 @@ initial equation
   assert(not use_X_in or not use_Xi_in,
     "Cannot use both X and Xi inputs, choose either use_X_in or use_Xi_in.");
 
+  if not use_X_in and not use_Xi_in then
+    Modelica.Fluid.Utilities.checkBoundary(Medium.mediumName, Medium.substanceNames,
+      Medium.singleState, true, X_in_internal, "Boundary_pT");
+  end if;
+
 equation
+  if use_X_in or use_Xi_in then
+    Modelica.Fluid.Utilities.checkBoundary(Medium.mediumName, Medium.substanceNames,
+      Medium.singleState, true, X_in_internal, "Boundary_pT");
+  end if;
+
   // Assign Xi_in_internal and X_in_internal
   // Note that at most one of X_in or Xi_in is present
   connect(X_in, X_in_internal);
