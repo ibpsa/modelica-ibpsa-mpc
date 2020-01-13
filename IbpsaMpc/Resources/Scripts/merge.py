@@ -18,7 +18,13 @@ files={
 "IBPSA.Fluid.Interfaces.PartialTwoPort": {},
 "IBPSA.Media.Air": {},
 "IBPSA.Utilities.Psychrometrics.Constants" : {},
-# "": {},
+"IBPSA.Fluid.MixingVolumes.MixingVolume" : {},
+"IBPSA.Fluid.MixingVolumes.BaseClasses.PartialMixingVolume" : {},
+"IBPSA.Fluid.Interfaces.LumpedVolumeDeclarations" : {},
+"IBPSA.Fluid.Interfaces.StaticTwoPortConservationEquation" : {},
+"IBPSA.Fluid.Interfaces.PartialTwoPortInterface" : {},
+"IBPSA.Fluid.Interfaces.PartialTwoPort" : {},
+"IBPSA.Fluid.Interfaces.ConservationEquation": {},
 # "": {},
 
 		}

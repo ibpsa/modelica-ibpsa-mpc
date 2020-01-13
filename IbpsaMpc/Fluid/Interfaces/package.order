@@ -1,2 +1,6 @@
 UsersGuide
+ConservationEquation
 PartialTwoPort
+PartialTwoPortInterface
+StaticTwoPortConservationEquation
+LumpedVolumeDeclarations
